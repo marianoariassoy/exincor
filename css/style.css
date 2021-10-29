@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+header {
+   position: fixed;
+   padding: 2.8rem;
+   padding-left: 4rem;
+   padding-right: 4rem;
+   background-color: white;
+   z-index: 2000;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+nav {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   margin: 0;
+   width: 100vw;
+   height: 100vh;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(3, 78, 129, 0.95);
+   z-index: 4000;
+}
+nav ul li {
+   display: block;
+   width: 100%;
+   font-size: 2rem;
+   font-weight: 700;
+   margin-bottom: 2px;
+}
+nav ul li a {
+   color: white;
+   
+}
+.menu, .close {
+   position: fixed;
+   right: 40px;
+   top: 35px;
+   font-size: 2.5rem;
+   z-index: 3000;
+}
+.close {
+   color: white;
+}
+.icono_redes {
+   font-size: 1.5rem;
+}
+
+#home {
+   background-image: url('../imgs/img_home.jpg');
+   background-size: 60%;
+   background-position: right;
+}
+#home .content {
+   display: flex;
+   align-items: center;
+}
+#servicios_items  {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-evenly;
+}
+.item {
+   display: inline-block;
+   margin: 0 .5rem;
+   margin-bottom: 4rem;
+}
+.item_img {
+   height: 80px ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.link_white { 
+   color: white;
+}
+.link_white:hover { 
+   color: #004E80;
+}
+#galeria_items {
+   display: flex;
+   flex-wrap: wrap;
+}
+.item_galeria {
+   width: 25vw;
+   height: 25vw;
+}
+.item_galeria img:hover {
+   opacity: 0.7;
+}
+
+#contacto_items {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+input, textarea {
+   color: #004E80;
+   border: 0;
+   border-bottom: 1px solid #004E80;
+   height: 40px;
+   width: 48%;
+   padding-left: 10px;
+   vertical-align:middle;
+   border-radius: 0;
+}
+textarea {
+   height: auto;
+   border: 1px solid #004E80;
+   width: 100%;
+   margin-top: 15px;
+   margin-bottom: 0;
+   display: block;
+   padding: 10px;
+}
+button, .link-1 {
+   color:white;
+   border: 0;
+   margin: 0;
+   float: right;
+   padding: 15px 25px;
+   cursor: pointer;
+}
+button:hover, .link-1:hover {
+   background-color: #8DBF49;
+   color: white;
+}
+.link-1 {
+   display: inline-block;
+   float: none;
+}
+footer {
+   padding: 2rem;
+   padding-left: 4rem;
+   padding-right: 4rem;
+   line-height: 1.6rem;
+}
+footer a { 
+   color: white;
+}
+footer a:hover { 
+   color: #8DBF49;
+}
+#col_footer {
+   display: flex;
+   justify-content: space-between;
+}

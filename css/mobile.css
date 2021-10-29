@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+@media (max-width: 1170px) {
+
+   header {
+      padding-left: 40px;
+      padding-right: 40px;
+   }
+}
+
+@media (max-width: 980px) {
+  
+   main {
+      width: 100vw;
+      overflow: hidden;
+   }
+   html {
+      font-size: 11px;
+   }
+   h1 {
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+   }  
+   h2 {
+      font-size: 2.2rem;
+      line-height: 2.2rem;
+   } 
+   header {
+     padding: 50px 30px;
+     padding-bottom: 30px;
+   }  
+   .menu, .close {
+      right: 25px;
+      top: 43px;
+   }
+   .logo img, #logo_footer {
+      width: 130px;
+   }
+   #home {
+      background-size: 100% auto;
+      background-position-y: 80%;
+   }
+   #home .content {
+      display: block;
+      padding-top: 28vh;
+   }
+   #frase_home h4 {
+      margin-bottom: 10px;
+   }
+   #frase_home h2 {
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+   }
+   .col1, .col2 {
+      width: 100%;
+      padding: 0;
+   }
+   .col1 {
+      padding-bottom: 30px;
+   }   
+   .col2 {
+      padding: 0 15vw;
+   }
+   #servicios_items  {
+      display: block;
+   }
+   #servicios_items .w-30 {
+      width: 100%;
+   }
+   .item {
+      margin: 0;
+      padding-bottom: 20px;
+   }
+   .item_img {
+      height: 58px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-content: center;
+      justify-content: center;
+      margin: 0;
+   }
+   .item_img img {
+      width: 40px;
+   }
+   .w-30 {
+      width: 40%;
+   }
+ 
+   .item_confian {
+      width: 30%;
+      margin: 10px;
+   }
+   .item_galeria {
+      width: 33.33vw;
+      height: 33.33vw;
+   }
+   #certificado {
+      width: 80px;
+   }
+   #sustentabiliad_img {
+      width: 70px;
+   }
+   footer {
+      padding: 30px;
+   } 
+   button, .link-1 {
+      padding: 10px 20px;
+   }
+   .p-1 {
+      padding-top: 12rem;
+   }
+}
