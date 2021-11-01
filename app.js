@@ -3,7 +3,7 @@ const app = express();
 
 //puerto
 require('dotenv').config();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 // Motor de plantilla
 const hbs = require('hbs');
