@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   {{> head titulo="Exincor Contacto"}}
+<body>
+<main>
+	{{> header}}
+	{{> nav}}
+   <section class="w-100" id="contacto">
+      <div class="content p-1">
+         <div class="row text-primary w-100 mb-1" id="contacto_titulo">
+            <h1 class="mb-2">7.</h1> 
+            <h1>Contacto</h1>
+         </div>
+         <form action="" method="post" id="form">
+            <div class="row w-100 mb-2" id="contacto_items">
+               <input type="text" name="nombre" placeholder="Nombre" id="nombre" class="mb-2" required>
+               <input type="text" name="apellido" placeholder="Apellido" id="apellido"  class="mb-2" required>
+               <input type="number" name="celular" placeholder="Celular" id="celular"  class="mb-2">
+               <input type="email" name="email" placeholder="E-Mail" id="email"  class="mb-2" required>
+               <input type="text" name="ciudad" placeholder="Ciudad" id="ciudad"  class="mb-2">
+               <input type="text" name="pais" placeholder="Pais" id="Pais"  class="mb-2">
+            </div>
+            <h2 class="text-primary">Mensaje</h2>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <div class="row w-100 mb-1">
+               <button type="submit" class="bg-primary"><h3>Enviar</h3></button>
+            </div>
+         </form>
+      </div>
+   </section>
+	{{> footer}}
+</main>
+   <script src="js/main.js"></script>
+</body>
+</html>

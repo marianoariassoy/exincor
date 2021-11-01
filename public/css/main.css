@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+/* Reset */
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section { 
+   display:block;
+ }
+:focus { outline:none; }
+::-moz-selection, ::selection { color:#fff; background:#999; }
+ol, ul { list-style:none; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+textarea { resize: none; } 
+ 
+::-webkit-input-placeholder { 
+   color: #004E80;
+}
+ 
+/* Main */
+body {
+   color: #6F6F6E;
+   font-family: 'Roboto', sans-serif;
+}
+
+/* Text */
+h1 {
+   font-size: 4.25rem;
+   line-height: 4.25rem;
+   font-weight: 900;
+}
+h2 {
+   font-size: 3.1rem;
+   line-height: 3.1rem;
+   font-weight: 900;
+}
+h3 {
+   font-size: 1.5rem;
+   font-weight: 900;
+}
+h4 {
+   font-size: 1.3rem;
+   line-height: 3rem;
+}
+p {
+   line-height: 1.6rem;
+   text-align: justify;
+}
+
+/* Links */
+a {
+   color: #004E80;
+   transition: all 0.2s ease;
+}
+a:hover {
+   color: #8DBF49;
+   transition: all 0.2s ease;
+}
+.link-main {
+   color: white;
+   padding: 10px 20px;
+   border-radius: 8px;
+   display: inline-block;
+}
+.link-main:hover {
+   background-color: gray;
+}
+
+/* Colors */
+.text-white {
+   color: white;
+}
+.text-primary {
+   color: #004E80;
+}
+.text-secondary {
+   color: #8DBF49;
+}
+.bg-primary {
+   background-color: #004E80;
+}
+.bg_secondary {
+   background-color: #8DBF49;
+}
+
+/* Spacing */
+.p-1 {
+   padding: 8rem;
+   padding-left: 30px;
+   padding-right: 30px;
+}
+.pb-1 {
+   padding-bottom: 4rem;
+}
+.mt-1 {
+   margin-top: 3.5rem;
+}
+.mb-1 {
+   margin-bottom: 3.5rem;
+}
+.mb-2 {
+   margin-bottom: 1.5rem;
+}
+
+.w-100 {
+   width: 100%;
+}
+.w-50 {
+   width: 48%;
+}
+.w-30 {
+   width: 30%;
+}
+.h-100 {
+   height: 100vh;
+}
+
+/* Structure */
+section {
+   float: left;
+   position: relative;
+   background-repeat: no-repeat;
+}
+footer {
+   float: left;
+}
+.content {
+   width: 100%;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+.col1 {
+   width: 55%;
+   padding-right: 60px;
+}
+.col2 {
+   width: 45%;
+   padding-top: 102px;
+}
+.row {
+   display: block;
+}
+
+/* Position */
+.center {
+   text-align: center;
+}
+.ar {
+   text-align: right;
+}
+
+/* Flex */
+.flex {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
