@@ -3,12 +3,44 @@
       <div class="row w-100" id="col_footer">
          <div>
             <ul class="nav_footer">
-               <li><a href="/">Inicio</a></li>
-               <li><a href="somos">Somos Exincor</a></li>
-               <li><a href="servicios">Servicios</a></li>
-               <li><a href="sustentabilidad">Sustentabilidad</a></li>
-               <li><a href="galeria">Galeria</a></li>
-               <li><a href="contacto">Contacto</a></li>
+
+{{#if index}}
+   <li><span class="text-secondary">Inicio</span></li>
+{{else}}
+   <li><a href="/">Inicio</a></li>
+{{/if}}
+
+{{#if somos}}
+   <li><span class="text-secondary">Somos Exincor</span></li>
+{{else}}
+   <li><a href="somos">Somos Exincor</a></li>
+{{/if}}   
+
+{{#if servicios}}
+   <li><span class="text-secondary">Servicios</span></li>
+{{else}}
+   <li><a href="servicios">Servicios</a></li>
+{{/if}}   
+
+{{#if sustentabilidad}}
+   <li><span class="text-secondary">Sustentabilidad</span></li>
+{{else}}
+   <li><a href="sustentabilidad">Sustentabilidad</a></li>
+{{/if}}   
+
+{{#if galeria}}
+   <li><span class="text-secondary">Galeria</span></li>
+{{else}}
+   <li><a href="galeria">Galeria</a></li>
+{{/if}} 
+
+{{#if contacto}}
+   <li><span class="text-secondary">Contacto</span></li>
+{{else}}
+   <li><a href="contacto">Contacto</a></li>
+{{/if}}  
+
+
             </ul>
          </div>
          <div>

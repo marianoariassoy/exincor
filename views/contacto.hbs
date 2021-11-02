@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-   {{> head titulo="Exincor Contacto"}}
+   {{> head contacto=1 }}
 
 <body>
 <main>
 	{{> header}}
-	{{> nav}}
+	{{> nav contacto=1  }}
    <section class="w-100" id="contacto">
       <div class="content p-1">
          <div class="row text-primary w-100 mb-1" id="contacto_titulo">
@@ -29,7 +29,7 @@
          </form>
       </div>
    </section>
-	{{> footer}}
+	{{> footer contacto=1 }}
 </main>
    <script src="js/main.js"></script>
 </body>

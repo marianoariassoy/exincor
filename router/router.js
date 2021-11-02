@@ -7,7 +7,9 @@ router.get("/", function (req, res) {
 });
 
 router.get("/somos", function (req, res) {
-   res.render("somos");
+   res.render("somos", {
+      somos: 1
+   });
 });
 
 router.get("/servicios", function (req, res) {

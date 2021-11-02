@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-   {{> head titulo="Exincor Servicios"}}
+   {{> head servicios=1 }}
 <body>
 <main>
-      
 	{{> header}}
-	{{> nav}}
-
+	{{> nav servicios=1 }}
    <section class="w-100" id="servicios">
       <div class="content p-1">
          <div class="row w-100 text-primary mb-1"> 
@@ -69,9 +67,31 @@
       </div>
    </section>
    
-	{{> footer}}
+	{{> footer servicios=1 }}
 
 </main>
    <script src="js/main.js"></script>
 </body>
 </html>
+
+
+{{!-- <div class="container p-4">
+        <h2> Lista productos</h2>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#myModalAdd">Añadir</button>
+    <table class="table table-striped" id="mytable">
+            <thead>
+                <th> Producto id</th>
+                <th> Producto nombre</th>
+                <th> Precio</th>
+            </thead>
+            <tbody>
+                {{#each results}}
+        <tr>
+                <td> {{ producto_id }}</td>
+                <td> {{ producto_nombre }}</td>
+                <td> {{ producto_precio }}</td>
+        </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div> --}}

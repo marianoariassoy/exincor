@@ -2,12 +2,43 @@
       <a href="#" class="close bi bi-x" id="close"> </a>
       <ul>
          <li class="mb-1"><img src="imgs/logo_footer.svg" alt="Logo nav"></li>
-         <li><a href="/">Inicio</a></li>
-         <li><a href="somos">Somos Exincor</a></li>
-         <li><a href="servicios">Servicios</a></li>
-         <li><a href="sustentabilidad">Sustentabilidad</a></li>
-         <li><a href="galeria">Galeria</a></li>
-         <li><a href="contacto">Contacto</a></li>
+ 
+{{#if index}}
+   <li><span class="text-secondary">Inicio</span></li>
+{{else}}
+   <li><a href="/">Inicio</a></li>
+{{/if}}
+
+{{#if somos}}
+   <li><span class="text-secondary">Somos Exincor</span></li>
+{{else}}
+   <li><a href="somos">Somos Exincor</a></li>
+{{/if}}   
+
+{{#if servicios}}
+   <li><span class="text-secondary">Servicios</span></li>
+{{else}}
+   <li><a href="servicios">Servicios</a></li>
+{{/if}}   
+
+{{#if sustentabilidad}}
+   <li><span class="text-secondary">Sustentabilidad</span></li>
+{{else}}
+   <li><a href="sustentabilidad">Sustentabilidad</a></li>
+{{/if}}   
+
+{{#if galeria}}
+   <li><span class="text-secondary">Galeria</span></li>
+{{else}}
+   <li><a href="galeria">Galeria</a></li>
+{{/if}} 
+
+{{#if contacto}}
+   <li><span class="text-secondary">Contacto</span></li>
+{{else}}
+   <li><a href="contacto">Contacto</a></li>
+{{/if}}  
+         
          <li> &nbsp; </li>
          <li>   
             <a href="#" target="_blank" class="bi bi-facebook icono_redes"></a> &nbsp; 
