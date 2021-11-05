@@ -13,57 +13,20 @@
             <h1>Servicios </h1>
          </div>
          <div class="row w-100" id="servicios_items">
-            <div class="item center w-30" id="servicios_item1">
-               <div class="item_img w-100 mb-2">
-                  <img src="imgs/icono1.svg" alt="Icono1">
-               </div>
-               <h3 class="mb-2 text-primary">Diseño e Impresión</h3>
-               <div class="item_txt w-100">
-                  <small>Somos una empresa con experiencia y compromiso que promueve el progreso integral de la región y del país, convencidos de que trabajando y originando trabajo lograremos nuestros objetivos. </small>
-               </div>
-            </div>
-            <div class="item center w-30" id="servicios_item2">
-               <div class="item_img w-100 mb-2">
-                  <img src="imgs/icono2.svg" alt="Icono1">
-               </div>
-               <h3 class="mb-2 text-primary">Desarrollo de Producto</h3>
-               <div class="item_txt w-100">
-                  <small>Somos una empresa con experiencia y compromiso que promueve el progreso integral de la región y del país, convencidos de que trabajando y originando trabajo lograremos nuestros objetivos. </small>
-               </div>
-            </div>
 
-            <div class="item center w-30" id="servicios_item3">
-               <div class="item_img w-100 mb-2">
-                  <img src="imgs/icono3.svg" alt="Icono1">
+            {{#each results}}
+               <div class="item center w-30" id="servicios_item1">
+                  <div class="item_img w-100 mb-2">
+                     <img src="imgs/{{ imagen }}" alt="Icono1">
+                  </div>
+                  <h3 class="mb-2 text-primary">{{ nombre }}</h3>
+                  <div class="item_txt w-100">
+                     <small>{{ texto }}</small>
+                  </div>
                </div>
-               <h3 class="mb-2 text-primary">Transporte</h3>
-               <div class="item_txt w-100">
-                  <small>Somos una empresa con experiencia y compromiso que promueve el progreso integral de la región y del país, convencidos de que trabajando y originando trabajo lograremos nuestros objetivos. </small>
-               </div>
-            </div>
-
-            <div class="item center w-30" id="servicios_item4">
-               <div class="item_img w-100 mb-2">
-                  <img src="imgs/icono4.svg" alt="Icono1">
-               </div>
-               <h3 class="mb-2 text-primary">Asistencia Técnica</h3>
-               <div class="item_txt w-100">
-                  <small>Somos una empresa con experiencia y compromiso que promueve el progreso integral de la región y del país, convencidos de que trabajando y originando trabajo lograremos nuestros objetivos. </small>
-               </div>
-            </div>
-
-            <div class="item center w-30" id="servicios_item5">
-               <div class="item_img w-100 mb-2">
-                  <img src="imgs/icono5.svg" alt="Icono1">
-               </div>
-               <h3 class="mb-2 text-primary">Laboratorio</h3>
-               <div class="item_txt w-100">
-                  <small>Somos una empresa con experiencia y compromiso que promueve el progreso integral de la región y del país, convencidos de que trabajando y originando trabajo lograremos nuestros objetivos. </small>
-               </div>
-            </div>
+            {{/each}}
 
          </div>
-
       </div>
    </section>
    
@@ -73,25 +36,3 @@
    <script src="js/main.js"></script>
 </body>
 </html>
-
-
-{{!-- <div class="container p-4">
-        <h2> Lista productos</h2>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#myModalAdd">Añadir</button>
-    <table class="table table-striped" id="mytable">
-            <thead>
-                <th> Producto id</th>
-                <th> Producto nombre</th>
-                <th> Precio</th>
-            </thead>
-            <tbody>
-                {{#each results}}
-        <tr>
-                <td> {{ producto_id }}</td>
-                <td> {{ producto_nombre }}</td>
-                <td> {{ producto_precio }}</td>
-        </tr>
-            {{/each}}
-            </tbody>
-        </table>
-    </div> --}}
