@@ -12,12 +12,12 @@
             <h1 class="mb-2">5.</h1> 
             <h1>Contacto</h1>
          </div>
-         <form action="" method="post" id="form">
+         <form action="/send_mail" onsubmit="return formulario();" method="post" id="form">
             <div class="row w-100 mb-2" id="contacto_items">
-               <input type="text" name="nombre" placeholder="Nombre" id="nombre" class="mb-2" required>
-               <input type="text" name="apellido" placeholder="Apellido" id="apellido"  class="mb-2" required>
+               <input type="text" name="nombre" placeholder="Nombre" id="nombre" class="mb-2" >
+               <input type="text" name="apellido" placeholder="Apellido" id="apellido"  class="mb-2" >
                <input type="number" name="celular" placeholder="Celular" id="celular"  class="mb-2">
-               <input type="email" name="email" placeholder="E-Mail" id="email"  class="mb-2" required>
+               <input type="email" name="email" placeholder="E-Mail" id="email"  class="mb-2" >
                <input type="text" name="ciudad" placeholder="Ciudad" id="ciudad"  class="mb-2">
                <input type="text" name="pais" placeholder="Pais" id="Pais"  class="mb-2">
             </div>
