@@ -1,4 +1,3 @@
-// Rutas
 const express = require("express");
 const router = express.Router();
 const nodemailer = require("nodemailer");
@@ -6,6 +5,7 @@ const nodemailer = require("nodemailer");
 // Base de datos
 const connection = require("./database/db");
 
+// Rutas
 router.get("/", function (req, res) {
    res.render("index");
 });

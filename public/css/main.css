@@ -24,7 +24,7 @@ textarea { resize: none; }
 ::-webkit-input-placeholder { 
    color: #004E80;
 }
- 
+
 /* Main */
 body {
    color: #6F6F6E;
@@ -53,6 +53,9 @@ h4 {
 p {
    line-height: 1.6rem;
    text-align: justify;
+}
+small {
+   font-size: 1rem;
 }
 
 /* Links */

@@ -21,23 +21,23 @@ function formulario() {
    let mensaje = document.getElementById("mensaje").value;
 
    if (nombre == null || nombre.length == 0) {
-      alert("Debe ingresar su nombre");
+      alert("Por favor ingrese su nombre");
       return false;
    }
    if (apellido == null || apellido.length == 0) {
-      alert("Debe ingresar su apellido");
+      alert("Por favor ingrese su apellido");
       return false;
    }
    if (!/\S+@\S+\.\S+/.test(email)) {
-      alert("Debe ingresar un correo válido");
+      alert("Por favor ingrese un email válido");
       return false;
    }
    if (celular == null || celular.length == 0 || isNaN(celular)) {
-      alert("Debe ingresar un número de telefono");
+      alert("Por favor ingrese un número de telefono");
       return false;
    }
    if (mensaje == null || mensaje.length == 0) {
-      alert("Debe ingresar un mensaje")
+      alert("Por favor ingrese un mensaje")
       return false;
    }
    return true;
