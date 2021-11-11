@@ -21,40 +21,40 @@
       <section class="w-100">
          <div class="row w-100" id="galeria_items">
 
-            <a data-fancybox="single" data-src="https://picsum.photos/id/230/1080" target="_blank"
-               class="item_galeria"><img src="https://picsum.photos/id/230/400" alt="Imagen" class="w-100"></a>
+            <a data-fancybox="single" data-src="https://lipsum.app/id/1/800x600" 
+               class="item_galeria"><img src="https://lipsum.app/id/1/300x300" alt="Imagen" class="w-100"></a>
 
-            <a data-fancybox="single" data-src="https://picsum.photos/id/231/1080" target="_blank"
-               class="item_galeria"><img src="https://picsum.photos/id/231/400" alt="Imagen" class="w-100"></a>
+            <a data-fancybox="single1" data-src="https://lipsum.app/id/2/800x600" 
+               class="item_galeria"><img src="https://lipsum.app/id/2/300x300" alt="Imagen" class="w-100"></a>
 
-            <a data-fancybox="single" data-src="https://picsum.photos/id/232/1080" target="_blank"
-               class="item_galeria"><img src="https://picsum.photos/id/232/400" alt="Imagen" class="w-100"></a>
+            <a data-fancybox="single2" data-src="https://lipsum.app/id/3/800x600" 
+               class="item_galeria"><img src="https://lipsum.app/id/3/300x300" alt="Imagen" class="w-100"></a>
 
-            <a data-fancybox="single" data-src="https://picsum.photos/id/233/1080" target="_blank"
-               class="item_galeria"><img src="https://picsum.photos/id/233/400" alt="Imagen" class="w-100"></a>
+            <a data-fancybox="single3" data-src="https://lipsum.app/id/4/800x600" 
+               class="item_galeria"><img src="https://lipsum.app/id/4/300x300" alt="Imagen" class="w-100"></a>
 
-            <a data-fancybox="single" data-src="https://picsum.photos/id/234/1080" target="_blank"
-               class="item_galeria"><img src="https://picsum.photos/id/234/400" alt="Imagen" class="w-100"></a>
+            <a data-fancybox="single4" data-src="https://lipsum.app/id/5/800x600" 
+               class="item_galeria"><img src="https://lipsum.app/id/5/300x300" alt="Imagen" class="w-100"></a>
 
-            <a data-fancybox="single" data-src="https://picsum.photos/id/235/1080" target="_blank"
-               class="item_galeria"><img src="https://picsum.photos/id/235/400" alt="Imagen" class="w-100"></a>
+            <a data-fancybox="single5" data-src="https://lipsum.app/id/6/800x600" 
+               class="item_galeria"><img src="https://lipsum.app/id/6/300x300" alt="Imagen" class="w-100"></a>
 
-            <a data-fancybox="single" data-src="https://picsum.photos/id/236/1080" target="_blank"
+            <a data-fancybox="single6" data-src="https://picsum.photos/id/236/1080"
                class="item_galeria"><img src="https://picsum.photos/id/236/400" alt="Imagen" class="w-100"></a>
 
-            <a data-fancybox="single" data-src="https://picsum.photos/id/237/1080" target="_blank"
+            <a data-fancybox="single7" data-src="https://picsum.photos/id/237/1080" 
                class="item_galeria"><img src="https://picsum.photos/id/237/400" alt="Imagen" class="w-100"></a>
 
-            <a data-fancybox="single" data-src="https://picsum.photos/id/238/1080" target="_blank"
+            <a data-fancybox="single8" data-src="https://picsum.photos/id/238/1080" 
                class="item_galeria"><img src="https://picsum.photos/id/238/400" alt="Imagen" class="w-100"></a>
 
-            <a data-fancybox="single" data-src="https://picsum.photos/id/239/1080" target="_blank"
+            <a data-fancybox="single9" data-src="https://picsum.photos/id/239/1080" 
                class="item_galeria"><img src="https://picsum.photos/id/239/400" alt="Imagen" class="w-100"></a>
 
-            <a data-fancybox="single" data-src="https://picsum.photos/id/240/1080" target="_blank"
+            <a data-fancybox="single10" data-src="https://picsum.photos/id/240/1080" 
                class="item_galeria"><img src="https://picsum.photos/id/240/400" alt="Imagen" class="w-100"></a>
 
-            <a data-fancybox="single" data-src="https://picsum.photos/id/241/1080" target="_blank"
+            <a data-fancybox="single11" data-src="https://picsum.photos/id/241/1080" 
                class="item_galeria"><img src="https://picsum.photos/id/241/400" alt="Imagen" class="w-100"></a>
 
          </div>
@@ -66,11 +66,9 @@
    <script src="js/main.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
    <script>
-      Fancybox.bind("[data-fancybox]", {
-         Image: {
-            zoom: false,
-         },
-      });
+      
+      Fancybox.defaults.Image = { zoom: false };
+
    </script>
 </body>
 </html>

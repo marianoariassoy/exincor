@@ -1,21 +1,23 @@
 const express = require("express");
 const app = express();
+
+// Middlewares
 app.use(express.json());
 app.use(express.urlencoded({extend:false}));
 
-//puerto
+// Puerto
 require('dotenv').config();
 const port = process.env.PORT || 5000;
 
-//motor de plantilla
+// Motor de plantilla
 const hbs = require('hbs');
 hbs.registerPartials(__dirname + "/views/partials/");
 app.set('view engine', 'hbs');
 
-//contenido estatico
+// Contenido estatico
 app.use(express.static(__dirname + "/public"));
 
-//router
+// Router
 app.use("/", require("./router"));
 
 app.listen(port, () => {
