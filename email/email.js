@@ -12,12 +12,21 @@ email.post("/send_mail", function (req, res) {
    const pais = req.body.pais;
    const mensaje = req.body.mensaje;
 
+   // const transporter = nodemailer.createTransport({
+   //    host: process.env.SMPT_HOST,
+   //    port: process.env.SMPT_PORT,
+   //    auth: {
+   //        user: process.env.SMPT_USER,
+   //        pass: process.env.SMPT_PASS
+   //    }
+   // });
+
    const transporter = nodemailer.createTransport({
-      host: process.env.SMPT_HOST,
-      port: process.env.SMPT_PORT,
+      host: 'smtp.ethereal.email',
+      port: 587,
       auth: {
-          user: process.env.SMPT_USER,
-          pass: process.env.SMPT_PASS
+          user: 'cleta.greenholt56@ethereal.email',
+          pass: 'NC5mdAPY13YCgqQqws'
       }
    });
 
