@@ -1,15 +1,13 @@
 @charset "utf-8";
 
 @media (max-width: 1170px) {
-
    header {
       padding-left: 40px;
       padding-right: 40px;
    }
 }
 
-@media (max-width: 980px) {
-  
+@media (max-width: 980px) { 
    main {
       width: 100vw;
       overflow: hidden;
@@ -32,6 +30,9 @@
    .menu, .close {
       right: 25px;
       top: 43px;
+   }
+   .logo {
+      margin-top: -12px;
    }
    .logo img, #logo_footer {
       width: 130px;

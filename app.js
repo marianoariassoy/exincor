@@ -1,21 +1,19 @@
 const express = require("express");
+const hbs = require('hbs');
 const app = express();
 
 // Middlewares
 app.use(express.json());
 app.use(express.urlencoded({extend:false}));
+app.use(express.static(__dirname + "/public"));
 
 // Puerto
 require('dotenv').config();
 const port = process.env.PORT || 5000;
 
 // Motor de plantilla
-const hbs = require('hbs');
-hbs.registerPartials(__dirname + "/views/partials/");
 app.set('view engine', 'hbs');
-
-// Contenido publico
-app.use(express.static(__dirname + "/public"));
+hbs.registerPartials(__dirname + "/views/partials/");
 
 // Router
 app.use("/", require("./router"));
