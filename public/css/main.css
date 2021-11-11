@@ -166,3 +166,7 @@ footer {
    justify-content: space-between;
    flex-wrap: wrap;
 }
+.flex_cc {
+   justify-content: center;
+   align-items: center;
+}

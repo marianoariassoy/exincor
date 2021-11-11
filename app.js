@@ -14,7 +14,7 @@ const hbs = require('hbs');
 hbs.registerPartials(__dirname + "/views/partials/");
 app.set('view engine', 'hbs');
 
-// Contenido estatico
+// Contenido publico
 app.use(express.static(__dirname + "/public"));
 
 // Router

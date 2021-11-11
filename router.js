@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-// Base de datos
+// Conexión a la base de datos
 const connection = require("./database/db");
 
 // Envio de email

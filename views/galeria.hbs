@@ -2,13 +2,10 @@
 <html lang="en">
 {{> head galeria=1 }}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
-
 <body>
    <main>
-
       {{> header}}
       {{> nav galeria=1 }}
-
       <section class="w-100" id="galeria">
          <div class="content p-1">
             <div class="row text-primary w-100">
@@ -17,10 +14,8 @@
             </div>
          </div>
       </section>
-
       <section class="w-100">
          <div class="row w-100" id="galeria_items">
-
             <a data-fancybox="single" data-src="https://lipsum.app/id/1/800x600" 
                class="item_galeria"><img src="https://lipsum.app/id/1/300x300" alt="Imagen" class="w-100"></a>
 
@@ -56,19 +51,14 @@
 
             <a data-fancybox="single11" data-src="https://picsum.photos/id/241/1080" 
                class="item_galeria"><img src="https://picsum.photos/id/241/400" alt="Imagen" class="w-100"></a>
-
          </div>
       </section>
-
       {{> footer galeria=1 }}
-
    </main>
    <script src="js/main.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
    <script>
-      
       Fancybox.defaults.Image = { zoom: false };
-
    </script>
 </body>
 </html>
