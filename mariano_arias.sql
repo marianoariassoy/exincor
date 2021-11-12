@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 06, 2021 at 03:08 PM
+-- Generation Time: Nov 12, 2021 at 08:17 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.1.33
 
@@ -20,6 +20,36 @@ SET time_zone = "+00:00";
 --
 -- Database: `exincor`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `imagenes`
+--
+
+CREATE TABLE `imagenes` (
+  `id` int(11) NOT NULL COMMENT 'Primary Key',
+  `imagen_grande` varchar(255) DEFAULT NULL,
+  `imagen_chica` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `imagenes`
+--
+
+INSERT INTO `imagenes` (`id`, `imagen_grande`, `imagen_chica`) VALUES
+(1, 'https://lipsum.app/id/1/800x600', 'https://lipsum.app/id/1/300x300'),
+(2, 'https://lipsum.app/id/2/800x600', 'https://lipsum.app/id/2/300x300'),
+(3, 'https://lipsum.app/id/3/800x600', 'https://lipsum.app/id/3/300x300'),
+(4, 'https://lipsum.app/id/4/800x600', 'https://lipsum.app/id/4/300x300'),
+(5, 'https://lipsum.app/id/5/800x600', 'https://lipsum.app/id/5/300x300'),
+(6, 'https://lipsum.app/id/6/800x600', 'https://lipsum.app/id/6/300x300'),
+(7, 'https://lipsum.app/id/7/800x600', 'https://lipsum.app/id/7/300x300'),
+(8, 'https://lipsum.app/id/8/800x600', 'https://lipsum.app/id/8/300x300'),
+(9, 'https://lipsum.app/id/9/800x600', 'https://lipsum.app/id/9/300x300'),
+(10, 'https://lipsum.app/id/10/800x600', 'https://lipsum.app/id/10/300x300'),
+(11, 'https://lipsum.app/id/11/800x600', 'https://lipsum.app/id/11/300x300'),
+(12, 'https://lipsum.app/id/12/800x600', 'https://lipsum.app/id/12/300x300');
 
 -- --------------------------------------------------------
 
@@ -69,6 +99,12 @@ INSERT INTO `textos` (`id`, `texto`) VALUES
 --
 
 --
+-- Indexes for table `imagenes`
+--
+ALTER TABLE `imagenes`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `servicios`
 --
 ALTER TABLE `servicios`
@@ -83,6 +119,12 @@ ALTER TABLE `textos`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `imagenes`
+--
+ALTER TABLE `imagenes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key', AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `servicios`
