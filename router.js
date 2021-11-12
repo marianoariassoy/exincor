@@ -42,8 +42,14 @@ router.get("/sustentabilidad", (req, res) => {
    });
 });
 
-router.get("/galeria", function (req, res) {
-   res.render("galeria");
+router.get("/galeria", (req, res) => {
+   let sql = "SELECT * FROM imagenes";
+   let query = connection.query(sql, (err, results) => {
+      if (err) throw err;
+      res.render("galeria", {
+         results: results,
+      });
+   });
 });
 
 router.get("/contacto", function (req, res) {

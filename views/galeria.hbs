@@ -14,43 +14,13 @@
             </div>
          </div>
       </section>
+   
       <section class="w-100">
          <div class="row w-100" id="galeria_items">
-            <a data-fancybox="single" data-src="https://lipsum.app/id/1/800x600" 
-               class="item_galeria"><img src="https://lipsum.app/id/1/300x300" alt="Imagen" class="w-100"></a>
-
-            <a data-fancybox="single1" data-src="https://lipsum.app/id/2/800x600" 
-               class="item_galeria"><img src="https://lipsum.app/id/2/300x300" alt="Imagen" class="w-100"></a>
-
-            <a data-fancybox="single2" data-src="https://lipsum.app/id/3/800x600" 
-               class="item_galeria"><img src="https://lipsum.app/id/3/300x300" alt="Imagen" class="w-100"></a>
-
-            <a data-fancybox="single3" data-src="https://lipsum.app/id/4/800x600" 
-               class="item_galeria"><img src="https://lipsum.app/id/4/300x300" alt="Imagen" class="w-100"></a>
-
-            <a data-fancybox="single4" data-src="https://lipsum.app/id/5/800x600" 
-               class="item_galeria"><img src="https://lipsum.app/id/5/300x300" alt="Imagen" class="w-100"></a>
-
-            <a data-fancybox="single5" data-src="https://lipsum.app/id/6/800x600" 
-               class="item_galeria"><img src="https://lipsum.app/id/6/300x300" alt="Imagen" class="w-100"></a>
-
-            <a data-fancybox="single6" data-src="https://picsum.photos/id/236/1080"
-               class="item_galeria"><img src="https://picsum.photos/id/236/400" alt="Imagen" class="w-100"></a>
-
-            <a data-fancybox="single7" data-src="https://picsum.photos/id/237/1080" 
-               class="item_galeria"><img src="https://picsum.photos/id/237/400" alt="Imagen" class="w-100"></a>
-
-            <a data-fancybox="single8" data-src="https://picsum.photos/id/238/1080" 
-               class="item_galeria"><img src="https://picsum.photos/id/238/400" alt="Imagen" class="w-100"></a>
-
-            <a data-fancybox="single9" data-src="https://picsum.photos/id/239/1080" 
-               class="item_galeria"><img src="https://picsum.photos/id/239/400" alt="Imagen" class="w-100"></a>
-
-            <a data-fancybox="single10" data-src="https://picsum.photos/id/240/1080" 
-               class="item_galeria"><img src="https://picsum.photos/id/240/400" alt="Imagen" class="w-100"></a>
-
-            <a data-fancybox="single11" data-src="https://picsum.photos/id/241/1080" 
-               class="item_galeria"><img src="https://picsum.photos/id/241/400" alt="Imagen" class="w-100"></a>
+            {{#each results}}
+               <a data-fancybox="single {{ id }}" data-src="{{ imagen_grande }}" 
+                  class="item_galeria"><img src="{{ imagen_chica }}" alt="Imagen {{ id }}" class="w-100"></a>
+            {{/each}}
          </div>
       </section>
       {{> footer galeria=1 }}
