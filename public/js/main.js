@@ -1,5 +1,5 @@
 
-// Muestra y cierra el nav
+// Abre y cierra el nav
 const menu = document.getElementById("menu");
 const close = document.getElementById("close");
 const nav = document.getElementById("nav");
@@ -12,13 +12,13 @@ close.addEventListener("click", function(evento){
    nav.style.display = 'none';
 });
 
-// Validación del formaulario
+// Validación del formaulario de contacto
 function formulario() {
-   let nombre = document.getElementById("nombre").value;
-   let apellido = document.getElementById("apellido").value;
-   let email = document.getElementById("email").value;
-   let celular = document.getElementById("celular").value;
-   let mensaje = document.getElementById("mensaje").value;
+   const nombre = document.getElementById("nombre").value;
+   const apellido = document.getElementById("apellido").value;
+   const email = document.getElementById("email").value;
+   const celular = document.getElementById("celular").value;
+   const mensaje = document.getElementById("mensaje").value;
 
    if (nombre == null || nombre.length == 0) {
       alert("Por favor ingrese su nombre");
