@@ -29,6 +29,7 @@ textarea { resize: none; }
 body {
    color: #6F6F6E;
    font-family: 'Roboto', sans-serif;
+   height: 100%; 
 }
 
 /* Text */
@@ -133,7 +134,8 @@ section {
    background-repeat: no-repeat;
 }
 footer {
-   float: left;
+   display:inline-block
+
 }
 .content {
    width: 100%;
